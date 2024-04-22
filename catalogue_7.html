@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+ <style type="text/css">
+        body{
+            background-image: url("Booksback.avif");
+            background-size:cover;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Bookstore</h1>
+        <div class="catalog">
+            <div class="book">
+                <img src="Book1.jpeg" alt="Atomic Habits">
+                <h2>Atomic Habits</h2>
+                <p>This breakthrough book from James Clear is the most comprehensive guide on how to change your habits and get 1% better every day.</p>
+                <p>$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book">
+                <img src="Book2.jpeg" alt="Book 2">
+                <h2>7 Habits of Highly Succesful People</h2>
+                <p>Stephen R. Covey’s book, The 7 Habits of Highly Effective People, continues to be a bestseller for the simple reason that it ignores trends and pop psychology and focuses on timeless principles of fairness, integrity, honesty, and human dignity.</p>
+                <p>$24.99</p>
+                <button>Add to Cart</button>
+            </div>
+	 <div class="book">
+                <img src="Book3.jpeg" alt="Book 3">
+                <h2>Can't Hurt me </h2>
+                <p>Can't Hurt Me" by David Goggins is an absolute powerhouse of a book that transcends the boundaries of inspiration and dives deep into the realms of transformation</p>
+                <p>$32.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Add more book entries here -->
+        </div>
+    </div>
+</body>
+</html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.book {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+</style>
